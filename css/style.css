@@ -1,0 +1,129 @@
+/* style desian start*/
+:root {
+  --gradient1: linear-gradient(90deg, #3f2b96 0%, #a8c0ff 100%);
+  --gradient2: linear-gradient(180deg, rgba(2, 0, 36, 1) 19%, rgba(7, 7, 41, 1) 100%);
+  --gradient3: linear-gradient(90deg, rgba(2, 0, 36, 1) 19%, rgba(7, 7, 41, 1) 100%);
+  --gradient4: linear-gradient(90deg, rgba(20, 17, 97, 1) 38%, rgba(64, 61, 136, 1) 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'poppins', sans-serif;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #eaeaea;
+  background-image: var(--gradient4);
+  background-size: 200%;
+  background-position: right;
+  animation: gradient-animation 10s infinite alternate;
+}
+
+.container {
+  max-width: 25rem;
+  margin: 0 auto;
+  background: #000000;
+  height: 89vh;
+  background-image: var(--gradient2);
+  border-radius: 20px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  padding: 55px;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile img {
+  width: 110px;
+  height: 110px;
+  border-radius: 60px;
+  border: #f4f4f4;
+  object-fit: cover;
+}
+
+.profile .name {
+  color: #f4f4f4;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* .profile .isi{
+  font-weight: 500;
+} */
+
+.button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-top: 5px;
+  border: none;
+}
+
+.button .isn {
+  padding: 9px 90px;
+  border-radius: 15px;
+  font-weight: 500;
+  border: none;
+}
+
+.button .tik {
+  padding: 9px 105px;
+  border-radius: 15px;
+  font-weight: 500;
+  border: none;
+}
+
+.button .twi {
+  padding: 9px 103px;
+  border-radius: 15px;
+  font-weight: 500;
+  border: none;
+}
+
+.button .git {
+  padding: 9px 102.5px;
+  border-radius: 14px;
+  font-weight: 500;
+  border: none;
+}
+
+.button .dis {
+  padding: 9px 100.2px;
+  border-radius: 15px;
+  font-weight: 500;
+  border: none;
+}
+
+/* style desian end*/
+
+/* animation start*/
+@keyframes gradient-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+button:hover {
+  background-color: #110c62;
+  box-shadow: 0px 15px 20px rgba(46, 52, 229, 0.4);
+  color: #ffff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+/* animation end */
